@@ -5,7 +5,7 @@
 # Let's create a fireplace object.
 @create campfire
 # set some aliases for the firepit
-@name campfire = pit; fire; firepit
+@name campfire = campfire; pit; fire; firepit
 # Adding description of fireplace
 @describe campfire = A small campfire flickers in the darkness.
 # dropping campfire in the current room.
