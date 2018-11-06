@@ -1,5 +1,14 @@
 # Welcome to Evennia!
 
+This is the developmental branch of my MUD game built from the Evennia engine.
+
+
+
+It is based on the Evennia master branch v0.8 (which may be updated as 
+the master is updated). Please note that in order to install, you need to 
+clone the master branch to pull. Plese refer to the evennia website for more
+information.
+
 This is your game directory, set up to let you start with
 your new game right away. An overview of this directory is found here:
 https://github.com/evennia/evennia/wiki/Directory-Overview#the-game-directory
