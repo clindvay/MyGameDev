@@ -3,17 +3,15 @@
 # Teleport to beginning room
 @teleport #2
 # Changing desciption of the starting room.
-@desc Limbo = "A grey mist swirls around you disorienting your view."
+@desc Limbo = A grey mist swirls around you disorienting your view.
 # Creating next room with exits forward and backward (and alias back).
 @dig Limbo2 = forward,backward;back
 #teleport to new room.
 @teleport Limbo2
 #Set Limbo2 description
-@desc Limbo2 = "As you move through the mist, you see the small flickering light of a campfire fade into view. It entices you to it's warmth, a nice change from the cold mist surrounding you." 
-# Let's create the fireplace object.
-@create campfire
-# set some aliases for the firepit
-@name campfire = campfire; pit; fire; firepit
+@desc Limbo2 = As you move through the mist, you see the small flickering light of a campfire fade into view. It entices you to it's warmth, a nice change from the cold mist surrounding you.
+# Let's create the fireplace object with aliases
+@create campfire; pit; fire; firepit
 # Adding description of fireplace
 @describe campfire = A small campfire flickers invitingly in the void that surrounds you.
 # dropping campfire in the current room.
