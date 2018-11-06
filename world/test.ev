@@ -1,17 +1,23 @@
 # Testing batch command inputs on our mud server.
+#
 # Teleport to beginning room
-
 @teleport #2
-# Let's create a fireplace object.
+# Changing desciption of the starting room.
+@desc = A grey mist swirls around you disorienting your view.
+# Creating next room with exits forward and backward (and alias back).
+@dig Limbo2 = forward,backward;back
+#teleport to new room.
+@teleport Limbo2
+# Let's create the fireplace object.
 @create campfire
 # set some aliases for the firepit
 @name campfire = campfire; pit; fire; firepit
 # Adding description of fireplace
-@describe campfire = A small campfire flickers in the darkness.
+@describe campfire = A small campfire flickers invitingly in the darkness.
 # dropping campfire in the current room.
-drop test_campfire
+drop campfire
 # lock it in place
-@lock campfire get:false()
+@lock campfire = get:false()
 # Set error message for get
 @set campfire/get_err_msg = You reach down to pick up the campfire and...OW...you burnt yourself!
 
