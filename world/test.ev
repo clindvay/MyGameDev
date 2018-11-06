@@ -1,0 +1,18 @@
+# Testing batch command inputs on our mud server.
+# Teleport to beginning room
+
+@teleport #2
+# Let's create a fireplace object.
+@create campfire
+# set some aliases for the firepit
+@name campfire = pit; fire; firepit
+# Adding description of fireplace
+@describe campfire = A small campfire flickers in the darkness.
+# dropping campfire in the current room.
+drop test_campfire
+# lock it in place
+@lock campfire get:false()
+# Set error message for get
+@set campfire/get_err_msg = You reach down to pick up the campfire and...OW...you burnt yourself!
+
+
